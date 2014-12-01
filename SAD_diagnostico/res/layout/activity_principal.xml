@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_person" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_princ_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_princ_escolhido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/b_princ_inicia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar" />
+
+        <Button
+            android:id="@+id/b_princ_freguente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_princ_freguentes" />
+
+        <RelativeLayout
+            android:id="@+id/imagens"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/cabeca_frente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cabeca_frente" />
+
+            <ImageButton
+                android:id="@+id/braco_esquerdo"
+                android:layout_width="63dp"
+                android:layout_height="148dp"
+                android:layout_alignBottom="@+id/braco_direito"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/braco_esquerdo" />
+
+            <ImageButton
+                android:id="@+id/braco_direito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/braco_direito" />
+
+            <ImageButton
+                android:id="@+id/perna_direita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/braco_direito"
+                android:layout_below="@+id/braco_direito"
+                android:src="@drawable/perna1_direita" />
+
+            <ImageButton
+                android:id="@+id/genital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/abdomem"
+                android:layout_below="@+id/abdomem"
+                android:src="@drawable/genital" />
+
+            <ImageButton
+                android:id="@+id/pe_esquerdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pescoco_frente"
+                android:layout_below="@+id/genital"
+                android:src="@drawable/pe1_frente" />
+
+            <ImageButton
+                android:id="@+id/pe_direito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genital"
+                android:layout_toLeftOf="@+id/perna_direita"
+                android:src="@drawable/pe_frente" />
+
+            <ImageButton
+                android:id="@+id/perna_esquerda"
+                android:layout_width="62dp"
+                android:layout_height="190dp"
+                android:layout_alignRight="@+id/braco_esquerdo"
+                android:layout_alignTop="@+id/perna_direita"
+                android:src="@drawable/perna_esquerda" />
+
+            <ImageButton
+                android:id="@+id/peito_frente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cabeca_frente"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/peito_frente" />
+
+            <ImageButton
+                android:id="@+id/abdomem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/peito_frente"
+                android:layout_below="@+id/peito_frente"
+                android:src="@drawable/abdomem" />
+
+            <ImageButton
+                android:id="@+id/pescoco_frente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/braco_direito"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pescoco_frente" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
